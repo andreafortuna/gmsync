@@ -1,1 +1,5 @@
-_gmsync.py
+# gmsync.py
+
+## A python GoogleMusic uploader using GMusicAPI
+
+
