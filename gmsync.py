@@ -3,7 +3,6 @@
 
 """
 An upload script for Google Music using https://github.com/simon-weber/gmusicapi.
-More information at https://github.com/thebigmunch/gmusicapi-scripts.
 
 Usage:
   Run gmsync from the directory that contains mp3 files.
