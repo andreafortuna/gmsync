@@ -1,1 +1,1 @@
-* gmsync.py
+_gmsync.py
