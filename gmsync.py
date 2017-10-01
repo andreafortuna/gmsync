@@ -39,17 +39,16 @@ def main():
 	songs_to_download = mmw.get_google_songs()
 	local_songs = mmw.get_local_songs(os.getcwd(), None, None, False, False, "", float('inf'))
 	
-	print(local_songs);
 	for song in songs_to_download[0]:
 		artist = song['artist']		
 		album = song['album']
 		title = song['title']
 		final_path = os.getcwd() + "/" + artist + "/" + album + "/" + title
 		if final_path + ".mp3" not in local_songs[0]: 		
-			print ("Download " + final_path) 
+			logger.info ("Download " + final_path) 
 			mmw.download(song,final_path)
 		else:
-			print (final_path + " already on disk")
+			logger.info (final_path + " already on disk")
 			
 	songs_to_upload, songs_to_filter, songs_to_exclude = mmw.get_local_songs(os.getcwd(), None, None, False, False, "", float('inf'))
 
